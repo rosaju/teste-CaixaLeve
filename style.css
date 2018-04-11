@@ -1,3 +1,53 @@
-html {
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 
+.background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url("./cidade.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    height: 4rem;
+}
+
+.link-container {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+}
+
+.logo-container {
+    width: 8rem;
+}
+
+.logo {
+    width: 100%;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.button {
+
+}
+
+.links {
+    padding: 0.4rem 0 0 1rem ;
+    font-family: 'Roboto', sans-serif;
 }
