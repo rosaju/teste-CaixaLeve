@@ -3,51 +3,346 @@ html, body {
     padding: 0;
     width: 100%;
     height: 100%;
+    font-family: 'Roboto', sans-serif;
 }
 
-.background {
+.title {
+    margin: 0;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.title__link {
+    color: #5e2fbd;
+}
+
+.title__white {
+    color: #fff;
+}
+
+.title__yellow {
+    
+    color: #eac80a;
+}
+
+.title--small {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.title--smallUper {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.title--space{
+    margin: 0.3rem;
+    padding-right: 0.5rem;
+}
+
+.text {
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.text__link {
+    color: #eac80a;
+}
+
+.text__white {
+    color: #fff;
+}
+
+.text--small {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+}
+
+.text-small {
+    margin: -0.5rem;
+}
+
+.heroContainer {
     position: relative;
-    width: 100vw;
+    padding: 0 7%;
     height: 100vh;
-    background-image: url("./cidade.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    object-fit: cover;
-    overflow: hidden;
+    background-color: #eac80a;
+    color: #fff;
 }
 
-.navbar-container{
+.navbarContent{
     display: flex;
     flex-direction: row;
-    margin: 1rem;
+    justify-content: space-between;
+    padding: 1rem 0;
+    width: 100%;
     height: 4rem;
 }
 
-.link-container {
+.navbarContent__list {
+    display: flex;
+}
+
+.navbarContent__links {
     display: flex;
     flex-direction: row;
     list-style: none;
-    padding: 0;
+    padding: 0 1rem;
 }
 
-.logo-container {
+.navbarContent__logo {
     width: 8rem;
+    flex-grow: 0;
 }
 
 .logo {
     width: 100%;
 }
 
-.button-container {
-    display: flex;
-    flex-direction: row;
+.navbarContent__button {
+    margin: auto;
+    padding: 0.7rem 3rem;
+    background-color: #5e2fbd;
+    border: none;
+    color: #fff;
 }
 
-.button {
+.heroContent {    
+    padding: 3rem 0;
+    width: 80%;
+    margin: 0;
+}
 
+.heroContent__info {
+    padding-top: 3rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 45% ;
+}
+
+.heroContent__buttons {
+    width: 100%;
+}
+
+.styleButton {
+    width: 40%;
+    height: 2.8rem;
+    margin: 2rem 0.8rem 0 0.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.2em;
+}
+
+.styleButton--transparent {
+    border-color: #fff;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.styleButton--full {
+    border-color: transparent;
+    background-color: #5e2fbd;
+}
+
+.styleButton--purple{
+    width: 80%;
+    height: 2.8rem;
+    margin: 1rem 0.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-color: transparent;
+    background-color: #5e2fbd;
+}
+
+.styleButton--yellow{
+    width: 80%;
+    height: 2.8rem;
+    margin: 1rem 0.8rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-color: transparent;
+    background-color: #eac80a;
+}
+
+.styleButton__yellow {
+    border-color: transparent;
+    background-color: #eac80a;
+}
+
+.heroContent__img {
+    padding-left: 25rem;
 }
 
 .links {
     padding: 0.4rem 0 0 1rem ;
-    font-family: 'Roboto', sans-serif;
 }
+
+.sectionAbout {
+    position: relative;
+    padding: 4rem 7%;
+    height: 100vh;
+    background-image: url("./img/bg-feats.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+    color:#fff;
+}
+
+.sectionAbout__title {
+    width: 46%;
+}
+
+.sectionAbout__container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sectionAbout__component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 3rem;
+    width: 25%; 
+}
+
+.sectionAbout__component--title {
+    width: 60%;
+    text-align: center;
+}
+
+.sectionAbout__img {
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.sectionAbout__buttons {
+    display: flex;
+    justify-content: center;
+    padding: 1rem 6rem 0 6rem;
+}
+
+.sectionPayment {
+    position: relative;    
+    height: 65vw;
+    padding: 0 7%; 
+    background-image: url("./img/bg-planos.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.sectionPayment__title {
+    padding: 4rem 0;
+}
+
+.sectionPayment__group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sectionPayment__component {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    width: 23%;
+    border-style: groove;
+}
+
+.sectionPayment__component--top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.sectionPayment__img {
+    padding: 2rem 0 1rem 0;
+}
+
+.sectionPayment__img--standart {
+    padding: 3.5rem 0 1.6rem 0;
+}
+
+.sectionPayment__list {
+    padding: 0;
+    list-style: none;
+}
+
+.sectionPayment__list--item {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: groove;
+
+}
+
+.sectionPayment__component--purple {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0;
+    width: 23%;
+    background-color: #5e2fbd;
+}
+
+.sectionPayment__list--purple {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: inset;
+    border-color: #fff;
+}
+
+.footer {
+    height: 20rem;
+    width: 100%; 
+}
+
+.footer__links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 4rem 7%;
+    background-color: #eac80a;
+}
+
+.footer__links--list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.footer__contact {
+    margin: 0;
+}
+
+.footer__copyright {
+    padding: 1rem 7%;
+    background-color: #5e2fbd;
+}
+
+.footer__copyright--text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-size: 12px;
+    font-weight: lighter; 
+}
+
